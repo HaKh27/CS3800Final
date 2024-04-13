@@ -1,0 +1,39 @@
+TITLE:
+——————————————————————————
+A Network Tic-Tac-Toe Game
+
+PROJECT OVERVIEW:
+——————————————————————————
+The goal of this game was to implement a game of Tic-Tac-Toe between 2 clients using socket programming. 
+
+IDE, LANGUAGE & CLASSES:
+——————————————————————————
+IDE: Eclipse
+Language: Java 
+1 Java class:  TTTS.java (server) 
+
+EXECUTION:
+——————————————————————————
+1.To execute, open 3 different terminal windows. 
+
+2. Change directory to the appropriate directory for all 3 of the terminal windows
+    Ex: /Users/hafsakhan/eclipse-workspace/CS3800Proj
+
+3.In the 1st terminal, compile the main program: 
+     Ex:    javac TTTS.java
+         
+4. Run the server program (in the 1st window) 
+     Ex:  java TTTS
+     Note: This will output: Tic Tac Toe Server is Running...
+
+5.In the 2nd and 3rd terminal window, use the ‘nc’ command to connect the clients to the socket
+    Ex: nc localhost 58901
+    Note: After both windows are communicating, the first window will output 
+   First player connected. Waiting for second player...
+   Second player connected. Starting the game...
+  The game will begin to display on the 2nd and 3rd terminal window
+
+6. Player X/O will receive prompts according to their turns. The screen will display this message if it is their turn: 
+ 	MESSAGE: Your move (Enter 'MOVE [0-8]')
+7. The player must type a string ‘MOVE [0-8]’
+     Ex: ‘MOVE 1’ or ‘MOVE 8’ 
